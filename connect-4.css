@@ -1,0 +1,63 @@
+
+h1 {
+    margin: 80px auto 0;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px #2a2a2a;
+}
+
+body {
+    background-color: rgb(217, 217, 217);
+}
+
+#board {
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+#board td {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #666;
+}
+  
+.piece {
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+ 
+.piece.p1 {
+    background-color: rgb(150, 131, 193);
+}
+  
+.piece.p2 {
+    background-color: rgb(111, 217, 134);
+}
+  
+#column-top td {
+    border: dashed 1px rgb(255, 255, 255);
+}
+
+#column-top td:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+  
